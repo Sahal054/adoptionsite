@@ -1,0 +1,29 @@
+{%extends "index.html"%}
+
+{%block content%}
+
+
+<section class="bg-secondary p-5 text-body">
+
+  <div class="container">
+    <form method="post">
+
+          {{form.hidden_tag()}}
+
+          {{form.name.label}} {{form.name}}
+          {{form.id.label}} {{form.id}}
+          {{form.submit}}
+
+    </form>
+
+
+  </div>
+
+</section>
+
+
+
+
+
+
+{% endblock %}

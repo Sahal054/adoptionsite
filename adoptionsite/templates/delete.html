@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block content%}
+<section class="bg-secondary text-body p-5">
+  <div class="container">
+    <h1>Dp you want to Adopt a puppy?</h1>
+    <h3>if so pls choose the name and enter id of that puppy</h3>
+
+
+
+    <form  method="post">
+
+
+        {{form.hidden_tag()}}
+        {{form.id.label}} {{form.id}}
+
+
+        {{form.name.label}} {{form.name}}
+        {{form.submit}}
+
+
+
+    </form>
+
+  </div>
+
+</section>
+
+
+
+{% endblock %}

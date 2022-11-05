@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>adoption site </title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('puppy.add')}}">Give a puppy </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('puppy.remove_pup')}}">Adopt a puppy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('puppy.list_pup')}}">List of puppies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('owner.add')}}">add owner</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{% block content %}
+
+
+
+
+<section class="bg-secondary text-body p-5">
+  <div class="container">
+    <h1> WELCOME TO ADOPTION PAGE</h1>
+    <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  </div>
+
+</section>
+
+{% endblock %}
+
+
+
+<body>
+
+</body>
+
+</html>

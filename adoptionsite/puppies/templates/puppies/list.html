@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+
+
+{% block content %}
+
+
+<section class="bg-secondary text-body p-5">
+
+  <div class="container">
+
+    <ul>
+      {%for dog in pups%}
+      <li>
+        {{dog}}
+      </li>
+      {% endfor %}
+    </ul>
+
+
+
+
+
+  </div>
+
+
+  <div >
+
+    <h1>owner list</h1>
+
+        <ul>
+          {%for i in owns%}
+          <li>
+            {{i}}
+          </li>
+          {% endfor %}
+        </ul>
+
+
+  </div>
+
+</section>
+
+
+
+{% endblock %}
